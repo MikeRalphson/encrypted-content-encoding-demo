@@ -14,3 +14,4 @@ var encrypted = ece.encrypt(data, parameters);
 var decrypted = ece.decrypt(encrypted, parameters);
 
 require('assert').equal(decrypted.compare(data), 0);
+console.log('Decrypted data matches original!');
