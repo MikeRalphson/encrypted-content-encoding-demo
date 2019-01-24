@@ -6,3 +6,4 @@ A working example of using the [http_ece](https://github.com/web-push-libs/encry
 
 * [Python](https://github.com/web-push-libs/encrypted-content-encoding/blob/master/python/README.rst#encrypted-content-encoding)
 * [PHP](https://github.com/devjack/encrypted-content-encoding)
+* [C](https://github.com/web-push-libs/ecec#ecec)
