@@ -13,5 +13,5 @@ const encrypted = ece.encrypt(data, parameters);
 
 const decrypted = ece.decrypt(encrypted, parameters);
 
-require('assert').equal(decrypted.compare(data), 0);
+require('assert').equal(decrypted.compare(data), 0, 'Decrypted data does not match original');
 console.log('Decrypted data matches original!');
