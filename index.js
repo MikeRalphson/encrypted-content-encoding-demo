@@ -1,17 +1,17 @@
-var ece = require('http_ece');
-var crypto = require('crypto')
-var base64 = require('base64url');
+const ece = require('http_ece');
+const crypto = require('crypto')
+const base64 = require('base64url');
 
-var parameters = {
+const parameters = {
   key: base64.encode(crypto.randomBytes(16)),
   salt: base64.encode(crypto.randomBytes(16))
 };
 
 const data = Buffer.from('Hello, sailor!');
 
-var encrypted = ece.encrypt(data, parameters);
+const encrypted = ece.encrypt(data, parameters);
 
-var decrypted = ece.decrypt(encrypted, parameters);
+const decrypted = ece.decrypt(encrypted, parameters);
 
 require('assert').equal(decrypted.compare(data), 0);
 console.log('Decrypted data matches original!');
