@@ -10,6 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "base64url": "^3.0.1",
-    "http_ece": "^1.0.5"
+    "http_ece": "^1.1.0"
   }
 }
